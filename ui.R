@@ -24,7 +24,9 @@ shinyUI(navbarPage("Menu",
                             h3('Input Explanation'),
                             p('You can type any text in the input box. The only limitation is that it needs to consist of only non-numeric, non-special characters and spaces. If the text length is 2 words or more, the algorithm will isolate the last two words and make a prediction based on these. If you only input one word, the algorithm will make a prediction based on that. Since the maximum input has been restricted to two words to make the application faster, some of the predictions might not make sense when inputting large sentences.'),
                             h3('Output Explanation'),
-                            p('The algorithm calculates the probabilities of the next word occuring and presents three words that have the highest probability to be the next word based on the input you proivided. If there is no prediction based on the input, the output will display NA')
+                            p('The algorithm calculates the probabilities of the next word occuring and presents three words that have the highest probability to be the next word based on the input you proivided. If there is no prediction based on the input, the output will display NA'),
+                            h3('Source Code'),
+                            div(p('The source code can be found in my GutHub repository:'), a("https://github.com/dimtriant/capstone", href="https://github.com/dimtriant/capstone"))
                    )
 )
 )
